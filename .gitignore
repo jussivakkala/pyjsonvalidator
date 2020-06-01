@@ -1,0 +1,8 @@
+__pycache__/
+unit_test/__pycache__/
+log.html
+output.xml
+report.html
+test_run_store.dat
+.idea
+*_out.*

@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Tester Data for test case",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+      "testerid": {
+        "type": "string",
+        "minLength": 3,
+        "maxLength": 12
+      },
+      "testrunid": {
+        "type": "string",
+        "pattern": "^[0-9]+$",
+        "minLength": 1,
+        "maxLength": 12
+      }
+    },
+
+    "required": [
+      "testerid",
+      "testrunid"
+    ]
+}

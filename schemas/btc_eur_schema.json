@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Customer Stock Values",
+  "type": "object",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "trade_id": {
+        "pattern": "^[0-9]+$",
+        "type": "string",
+        "minLength": 8,
+        "maxLength": 8
+      },
+      "price": {
+        "type": "string",
+        "pattern": "^[0-9]{1,15}\\.[0-9]{1,5}$"
+      },
+      "size": {
+        "type": "string",
+        "pattern": "^[0-9]{1,15}\\.[0-9]{1,15}$"
+      },
+      "time": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "bid": {
+        "type": "string",
+        "pattern": "^[0-9]{1,15}\\.[0-9]{1,5}$"
+      },
+      "ask": {
+        "type": "string",
+        "pattern": "^[0-9]{1,15}\\.[0-9]{1,5}$"
+      },
+      "volume": {
+        "type": "string",
+        "pattern": "^[0-9]{1,15}\\.[0-9]{1,8}$"
+      }
+    },
+    "required": [
+      "trade_id",
+      "price",
+      "size",
+      "time"
+    ]
+  }
+}
