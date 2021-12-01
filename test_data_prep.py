@@ -9,7 +9,7 @@ tester_file = "test_run_store.dat"
 
 
 def get_tester_data():
-
+    tester_dict = {}
     if not os.path.isfile(tester_file):
         try:
             fobj = open(tester_file, 'w')

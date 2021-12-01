@@ -119,7 +119,7 @@ python 3.* installed
 
 ## Running the unit test
 
-'python -m test_json_validations'
+'python -m unit_test_validations'
 
 ## Authors
 

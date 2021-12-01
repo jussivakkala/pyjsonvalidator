@@ -26,7 +26,7 @@ def validate_and_set_input_file(test_dict):
 
     # Match URL
     valid = validators.url(test_dict['testmodule'])
-    if valid == True:
+    if valid:
         test_run = json_web_operations.get_json_from_url(test_dict['testmodule'])
         return test_run
 
