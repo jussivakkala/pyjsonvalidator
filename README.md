@@ -18,8 +18,14 @@ This project source code provides an easy basis for further development.
 - check that Python 3.* has been installed
 - check that jsonschema and yaml python libraries are installed (read 'Prerequisites' below) 
 - go to the directory where you copied the project
-- run from the command line the default example: 'python cmd_json_test.py'
-- if you have Robot Framework installed, you can run an example in command line: 'robot .'
+- run from the command line the default example: 
+  ```
+  python cmd_json_test.py
+  ```
+- if you have Robot Framework installed, you can run an example in command line:
+    ```  
+    robot .
+    ```
 - verify output on console and created files
 - add more schemas and data processing to suit your own needs!
 
@@ -106,7 +112,7 @@ unit_test_validations.py
 test_json.robot
 
 #### Required libraries and tools
-jsonschema, validators and pyyaml are installed (command line 'pip install <library>' suffices, if you have pip installed)  
+jsonschema, validators and pyyaml are installed (either pipenv, venv etc. or command line 'pip install 'library nn' suffices, if you have pip installed)  
 Current versions of needed libraries (listed with pipreqs -tool)  
 jsonschema==3.0.1  
 validators==0.15.0  
@@ -118,9 +124,9 @@ pyyaml==5.3.1
 python 3.* installed  
 
 ## Running the unit test
-
-'python -m unit_test_validations'
-
+```
+python -m unit_test_validations
+```
 ## Authors
 
 * Jussi Vakkala 
