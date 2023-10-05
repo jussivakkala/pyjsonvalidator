@@ -15,7 +15,7 @@ Get Some Test Data
     FOR  ${testcase}  IN  @{regression_tests}
         Log to Console  \n************************
         ${test_set}=  Json Validation  ${testcase}  ${modifications}
-        Log  ${test_set}  repr=yes  console=yes
+        Log  ${test_set}  formatter=repr  console=yes
     END
     Log to Console  \n********* Data is validated O.K with schema *************
 
